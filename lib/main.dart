@@ -2467,30 +2467,26 @@ class MyApp extends StatelessWidget{
         body:SingleChildScrollView(
           child: Column(
               children:[
-                Row(
-                  children:[
-                    Container(
-                      height:80,
-                      width:270,
-                      decoration:BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color:Colors.white54,
 
-                      ),
-                      child:Row(
-                       children:[
-                         Icon(Icons.search,color:Colors.black),
-                         SizedBox(width:15),
-                         Text(
-                           'Search',style:TextStyle(
-                           color:Colors.black,fontSize:20,fontWeight:FontWeight.bold,
-                         ),
-                         ),
-                       ],
-                      ),
-                    ),
-                  ],
+                Container(
+                  height:80,
+                  width:270,
+                  decoration:BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color:Colors.white54,
 
+                  ),
+                  child:Row(
+                   children:[
+                     Icon(Icons.search,color:Colors.black),
+                     SizedBox(width:15),
+                     Text(
+                       'Search',style:TextStyle(
+                       color:Colors.black,fontSize:20,fontWeight:FontWeight.bold,
+                     ),
+                     ),
+                   ],
+                  ),
                 ),
                 Divider(thickness:0.5,color:Colors.blueGrey),
                 Row(
@@ -2561,135 +2557,123 @@ class MyApp extends StatelessWidget{
       ],
                    ),
                Divider(thickness:0.5,color:Colors.blueGrey,),
-                Row(
-                  children:[
-                    Card(
-                      color:Colors.white,
-                      child:ListTile
-                        (
-                        leading:CircleAvatar(
-                          radius:40,
-                          backgroundImage: AssetImage('assets/awesome.jpg'),
+                Card(
+                  color:Colors.white,
+                  child:ListTile
+                    (
+                    leading:CircleAvatar(
+                      radius:40,
+                      backgroundImage: AssetImage('assets/awesome.jpg'),
+                    ),
+                    title:Text(
+                      'Fatima',style:TextStyle(
+                      color:Colors.black,
+                      fontSize:20,
+                    ),
+                    ),
+                    subtitle: Text(
+                      'wht about today??',
+                      style:TextStyle(
+                        color:Colors.black,
+                        fontSize:10,
+                      ),
+                    ),
+                    trailing:Column(
+                      children:[
+                        Text(
+                          '6:03am',
                         ),
-                        title:Text(
-                          'Fatima',style:TextStyle(
+                        SizedBox(height:5),
+                        CircleAvatar(
+                        radius:20,
+                          backgroundColor: Colors.red,
+                          child:Text(
+                            '2',
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Card(
+                  color:Colors.white,
+                  child:ListTile
+                    (
+                    leading:CircleAvatar(
+                          radius:40,
+                          backgroundImage: AssetImage('assets/beutifull.jpg.jpg'),
+                    ),
+                    title:Text(
+                          'shazii',style:TextStyle(
                           color:Colors.black,
                           fontSize:20,
-                        ),
-                        ),
-                        subtitle: Text(
-                          'wht about today??',
+                    ),
+                    ),
+                    subtitle: Text(
+                          'are u here?',
                           style:TextStyle(
                             color:Colors.black,
                             fontSize:10,
                           ),
-                        ),
-                        trailing:Column(
+                    ),
+                    trailing:Column(
                           children:[
                             Text(
-                              '6:03am',
+                              '6:10am',
                             ),
                             SizedBox(height:5),
                             CircleAvatar(
-                            radius:20,
+                              radius:20,
                               backgroundColor: Colors.red,
                               child:Text(
-                                '2',
+                                '5',
                               ),
                             ),
                           ],
-                        ),
-                      ),
                     ),
-                  ],
+                  ),
                 ),
-                Row(
-children:[
-  Card(
-    color:Colors.white,
-    child:ListTile
-      (
-      leading:CircleAvatar(
-            radius:40,
-            backgroundImage: AssetImage('assets/beutifull.jpg.jpg'),
-      ),
-      title:Text(
-            'shazii',style:TextStyle(
-            color:Colors.black,
-            fontSize:20,
-      ),
-      ),
-      subtitle: Text(
-            'are u here?',
-            style:TextStyle(
-              color:Colors.black,
-              fontSize:10,
-            ),
-      ),
-      trailing:Column(
-            children:[
-              Text(
-                '6:10am',
-              ),
-              SizedBox(height:5),
-              CircleAvatar(
-                radius:20,
-                backgroundColor: Colors.red,
-                child:Text(
-                  '5',
-                ),
-              ),
-            ],
-      ),
-    ),
-  ),
-],
-                ),
-                Row(
-children:[
-  Card(
-    color:Colors.white,
-    child:ListTile
-      (
-      leading:CircleAvatar(
-            radius:30,
-            backgroundImage: AssetImage('assets/awesome.jpg'),
-      ),
-      title:Text(
-            'Fatima',style:TextStyle(
-            color:Colors.black,
-            fontSize:20,
-      ),
-      ),
-      subtitle: Text(
-            'do you have some plain today??',
-            style:TextStyle(
-              color:Colors.black,
-              fontSize:10,
-            ),
-      ),
-      trailing:Column(
-            children:[
-              Text(
-                '8:30am',style:TextStyle(
-          color:Colors.blueGrey,
-      ),
-              ),
-              SizedBox(height:5),
-              CircleAvatar(
-                radius:20,
-                backgroundColor: Colors.red,
-                child:Text(
-                  '5',style:TextStyle(
-                  color:Colors.black,fontSize:10,
-                ),
-                ),
-              ),
-            ],
-      ),
-    ),
-  ),
-],
+                Card(
+                  color:Colors.white,
+                  child:ListTile
+                    (
+                    leading:CircleAvatar(
+                          radius:30,
+                          backgroundImage: AssetImage('assets/awesome.jpg'),
+                    ),
+                    title:Text(
+                          'Fatima',style:TextStyle(
+                          color:Colors.black,
+                          fontSize:20,
+                    ),
+                    ),
+                    subtitle: Text(
+                          'do you have some plain today??',
+                          style:TextStyle(
+                            color:Colors.black,
+                            fontSize:10,
+                          ),
+                    ),
+                    trailing:Column(
+                          children:[
+                            Text(
+                              '8:30am',style:TextStyle(
+                        color:Colors.blueGrey,
+                    ),
+                            ),
+                            SizedBox(height:5),
+                            CircleAvatar(
+                              radius:20,
+                              backgroundColor: Colors.red,
+                              child:Text(
+                                '5',style:TextStyle(
+                                color:Colors.black,fontSize:10,
+                              ),
+                              ),
+                            ),
+                          ],
+                    ),
+                  ),
                 ),
               ],
             ),

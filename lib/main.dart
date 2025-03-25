@@ -2717,6 +2717,48 @@ class MyApp extends StatelessWidget{
                     ),
                   ),
                 ),
+                Card(
+                  color:Colors.white,
+                  child:ListTile
+                    (
+                    leading:CircleAvatar(
+                          radius:30,
+                          backgroundImage: AssetImage('assets/awesome.jpg'),
+                    ),
+                    title:Text(
+                          'Fatima',style:TextStyle(
+                          color:Colors.black,
+                          fontSize:20,
+                    ),
+                    ),
+                    subtitle: Text(
+                          'do you have some plain today??',
+                          style:TextStyle(
+                            color:Colors.black,
+                            fontSize:10,
+                          ),
+                    ),
+                    trailing:Column(
+                          children:[
+                            Text(
+                              '8:30am',style:TextStyle(
+                        color:Colors.blueGrey,
+                    ),
+                            ),
+                            SizedBox(height:5),
+                            CircleAvatar(
+                              radius:20,
+                              backgroundColor: Colors.red,
+                              child:Text(
+                                '5',style:TextStyle(
+                                color:Colors.black,fontSize:10,
+                              ),
+                              ),
+                            ),
+                          ],
+                    ),
+                  ),
+                ),
               ],
             ),
         ),

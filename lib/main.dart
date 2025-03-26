@@ -2435,8 +2435,342 @@
 //     );
 //   }
 //}
+// import 'package:flutter/material.dart';
+// void main(){
+//   runApp(MyApp());
+// }
+// class MyApp extends StatelessWidget{
+//   const MyApp();
+//   @override
+//   Widget build(BuildContext context){
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home:Scaffold(
+//         backgroundColor: Colors.white,
+//         appBar:AppBar(
+//           backgroundColor: Colors.white,
+//           actions:[
+//             Icon(Icons.camera_alt,color:Colors.black,),
+//             SizedBox(width:20),
+//             Icon(Icons.more_vert,color:Colors.black,),
+//             SizedBox(width:30),
+//           ],
+//           title:Text(
+//             'WhatsApp',style:TextStyle(
+//             color:Colors.green,
+//             fontSize:30,
+//             fontWeight:FontWeight.bold,
+//           ),
+//           ),
+//           centerTitle:false,
+//         ),
+//         body:SingleChildScrollView(
+//           child: Column(
+//               children:[
+//
+//                 Container(
+//                   height:80,
+//                   width:270,
+//                   decoration:BoxDecoration(
+//                     borderRadius: BorderRadius.circular(10),
+//                     color:Colors.white54,
+//
+//                   ),
+//                   child:Row(
+//                    children:[
+//                      Icon(Icons.search,color:Colors.black),
+//                      SizedBox(width:15),
+//                      Text(
+//                        'Search',style:TextStyle(
+//                        color:Colors.black,fontSize:20,fontWeight:FontWeight.bold,
+//                      ),
+//                      ),
+//                    ],
+//                   ),
+//                 ),
+//                 Divider(thickness:0.5,color:Colors.blueGrey),
+//                 Row(
+//                  children:[
+//                    Container(
+//                     height:25,
+//                      width:100,
+//                      decoration: BoxDecoration(
+//                        color:Colors.white54,
+//                        borderRadius:BorderRadius.circular(10),
+//                      ),
+//                      child:Text(
+//                        'All',style:TextStyle(
+//                        color:Colors.black,
+//                      ),
+//                      ),
+//                    ),
+//                    Container(
+//                      height:25,
+//                      width:85,
+//                      decoration: BoxDecoration(
+//                        color:Colors.white54,
+//                        borderRadius:BorderRadius.circular(10),
+//                      ),
+//                      child:Text(
+//                        'UnRead Chats',style:TextStyle(
+//                        color:Colors.black,
+//                      ),
+//                      ),
+//                    ),
+//
+//                     Container(
+//                       height:40,
+//                       width:100,
+//                       decoration: BoxDecoration(
+//                         color:Colors.white54,
+//                         borderRadius:BorderRadius.circular(10),
+//                       ),
+//                       child:Text(
+//                         'Favourites',style:TextStyle(
+//                         color:Colors.black,
+//                       ),
+//                       ),
+//                     ),
+//                    Container(
+//                      height:20,
+//                      width:75,
+//                      decoration: BoxDecoration(
+//                        color:Colors.white54,
+//                        borderRadius:BorderRadius.circular(10),
+//                      ),
+//                      child:Text(
+//                        'Groups',style:TextStyle(
+//                        color:Colors.black,
+//                      ),
+//                      ),
+//                    ),
+//                    Container(
+//                      height:35,
+//                      width:75,
+//                      decoration: BoxDecoration(
+//                        color:Colors.white54,
+//                        borderRadius:BorderRadius.circular(10),
+//                      ),
+//                      child:Icon(Icons.add,color:Colors.black,)
+//
+//                    ),
+//       ],
+//                    ),
+//                Divider(thickness:0.5,color:Colors.blueGrey,),
+//                 Card(
+//                   color:Colors.white,
+//                   child:ListTile
+//                     (
+//                     leading:CircleAvatar(
+//                       radius:40,
+//                       backgroundImage: AssetImage('assets/awesome.jpg'),
+//                     ),
+//                     title:Text(
+//                       'Fatima',style:TextStyle(
+//                       color:Colors.black,
+//                       fontSize:20,
+//                     ),
+//                     ),
+//                     subtitle: Text(
+//                       'wht about today??',
+//                       style:TextStyle(
+//                         color:Colors.black,
+//                         fontSize:10,
+//                       ),
+//                     ),
+//                     trailing:Column(
+//                       children:[
+//                         Text(
+//                           '6:03am',
+//                         ),
+//                         SizedBox(height:5),
+//                         CircleAvatar(
+//                         radius:20,
+//                           backgroundColor: Colors.red,
+//                           child:Text(
+//                             '2',
+//                           ),
+//                         ),
+//                       ],
+//                     ),
+//                   ),
+//                 ),
+//                 Card(
+//                   color:Colors.white,
+//                   child:ListTile
+//                     (
+//                     leading:CircleAvatar(
+//                           radius:40,
+//                           backgroundImage: AssetImage('assets/beutifull.jpg.jpg'),
+//                     ),
+//                     title:Text(
+//                           'shazii',style:TextStyle(
+//                           color:Colors.black,
+//                           fontSize:20,
+//                     ),
+//                     ),
+//                     subtitle: Text(
+//                           'are u here?',
+//                           style:TextStyle(
+//                             color:Colors.black,
+//                             fontSize:10,
+//                           ),
+//                     ),
+//                     trailing:Column(
+//                           children:[
+//                             Text(
+//                               '6:10am',
+//                             ),
+//                             SizedBox(height:5),
+//                             CircleAvatar(
+//                               radius:20,
+//                               backgroundColor: Colors.red,
+//                               child:Text(
+//                                 '5',
+//                               ),
+//                             ),
+//                           ],
+//                     ),
+//                   ),
+//                 ),
+//                 Card(
+//                   color:Colors.white,
+//                   child:ListTile
+//                     (
+//                     leading:CircleAvatar(
+//                           radius:30,
+//                           backgroundImage: AssetImage('assets/awesome.jpg'),
+//                     ),
+//                     title:Text(
+//                           'Fatima',style:TextStyle(
+//                           color:Colors.black,
+//                           fontSize:20,
+//                     ),
+//                     ),
+//                     subtitle: Text(
+//                           'do you have some plain today??',
+//                           style:TextStyle(
+//                             color:Colors.black,
+//                             fontSize:10,
+//                           ),
+//                     ),
+//                     trailing:Column(
+//                           children:[
+//                             Text(
+//                               '8:30am',style:TextStyle(
+//                         color:Colors.blueGrey,
+//                     ),
+//                             ),
+//                             SizedBox(height:5),
+//                             CircleAvatar(
+//                               radius:20,
+//                               backgroundColor: Colors.red,
+//                               child:Text(
+//                                 '5',style:TextStyle(
+//                                 color:Colors.black,fontSize:10,
+//                               ),
+//                               ),
+//                             ),
+//                           ],
+//                     ),
+//                   ),
+//                 ),
+//                 Card(
+//                   color:Colors.white,
+//                   child:ListTile
+//                     (
+//                     leading:CircleAvatar(
+//                           radius:30,
+//                           backgroundImage: AssetImage('assets/awesome.jpg'),
+//                     ),
+//                     title:Text(
+//                           'Fatima',style:TextStyle(
+//                           color:Colors.black,
+//                           fontSize:20,
+//                     ),
+//                     ),
+//                     subtitle: Text(
+//                           'do you have some plain today??',
+//                           style:TextStyle(
+//                             color:Colors.black,
+//                             fontSize:10,
+//                           ),
+//                     ),
+//                     trailing:Column(
+//                           children:[
+//                             Text(
+//                               '8:30am',style:TextStyle(
+//                         color:Colors.blueGrey,
+//                     ),
+//                             ),
+//                             SizedBox(height:5),
+//                             CircleAvatar(
+//                               radius:20,
+//                               backgroundColor: Colors.red,
+//                               child:Text(
+//                                 '5',style:TextStyle(
+//                                 color:Colors.black,fontSize:10,
+//                               ),
+//                               ),
+//                             ),
+//                           ],
+//                     ),
+//                   ),
+//                 ),
+//                 Card(
+//                   color:Colors.white,
+//                   child:ListTile
+//                     (
+//                     leading:CircleAvatar(
+//                           radius:30,
+//                           backgroundImage: AssetImage('assets/awesome.jpg'),
+//                     ),
+//                     title:Text(
+//                           'Fatima',style:TextStyle(
+//                           color:Colors.black,
+//                           fontSize:20,
+//                     ),
+//                     ),
+//                     subtitle: Text(
+//                           'do you have some plain today??',
+//                           style:TextStyle(
+//                             color:Colors.black,
+//                             fontSize:10,
+//                           ),
+//                     ),
+//                     trailing:Column(
+//                           children:[
+//                             Text(
+//                               '8:30am',style:TextStyle(
+//                         color:Colors.blueGrey,
+//                     ),
+//                             ),
+//                             SizedBox(height:5),
+//                             CircleAvatar(
+//                               radius:20,
+//                               backgroundColor: Colors.red,
+//                               child:Text(
+//                                 '5',style:TextStyle(
+//                                 color:Colors.black,fontSize:10,
+//                               ),
+//                               ),
+//                             ),
+//                           ],
+//                     ),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//         ),
+//       ),
+//
+//     );
+//   }
+// }
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-void main(){
+void main()
+{
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget{
@@ -2444,323 +2778,488 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner:false,
       home:Scaffold(
-        backgroundColor: Colors.white,
         appBar:AppBar(
-          backgroundColor: Colors.white,
-          actions:[
-            Icon(Icons.camera_alt,color:Colors.black,),
-            SizedBox(width:20),
-            Icon(Icons.more_vert,color:Colors.black,),
-            SizedBox(width:30),
-          ],
-          title:Text(
-            'WhatsApp',style:TextStyle(
-            color:Colors.green,
-            fontSize:30,
-            fontWeight:FontWeight.bold,
-          ),
-          ),
-          centerTitle:false,
+          backgroundColor: Colors.orange,
+         leading:Icon(Icons.menu,color:Colors.white,size:30,),
+          title:Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children:[
+              Text(
+          'FOODXA',style:TextStyle(
+                color:Colors.white,
+                fontSize:20,
+          ) ,
         ),
-        body:SingleChildScrollView(
-          child: Column(
+              Row(
+                children: [
+                  Text(
+                    'GOOD FOOD GOOD HEALTH',style:TextStyle(
+                    color:Colors.white,
+                    fontSize:20,
+                  ),
+                  ),
+                  Spacer(),
+                  Text(
+                    'Sector 67 ,5m',style:TextStyle(
+                    color:Colors.white,
+                    fontSize:15,
+                  ),
+                  ),
+                  Icon(Icons.add_location_alt_outlined,color:Colors.white,),
+                ],
+              ),
+        ],
+      ),
+//           centerTitle: false,
+//           actions:[
+//             // SizedBox(height:30),
+//             //  Text(
+//             //   'Sector 67 ,5m',style:TextStyle(
+//             //   color:Colors.white,
+//             //    fontSize:15,
+//             //  ),
+//             //  ),
+// //            SizedBox(width:5),
+//             Icon(Icons.add_location_alt_outlined,color:Colors.white,),
+//             SizedBox(width:10),
+//           ],
+        ),
+        body: SingleChildScrollView(
+    scrollDirection:Axis.vertical,
+       child: Padding(
+         padding: const EdgeInsets.only(left: 18,right: 18),
+         child: Column(
               children:[
-
-                Container(
-                  height:80,
-                  width:270,
-                  decoration:BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color:Colors.white54,
-
-                  ),
-                  child:Row(
-                   children:[
-                     Icon(Icons.search,color:Colors.black),
-                     SizedBox(width:15),
-                     Text(
-                       'Search',style:TextStyle(
-                       color:Colors.black,fontSize:20,fontWeight:FontWeight.bold,
-                     ),
-                     ),
-                   ],
-                  ),
-                ),
-                Divider(thickness:0.5,color:Colors.blueGrey),
-                Row(
-                 children:[
-                   Container(
-                    height:25,
-                     width:100,
-                     decoration: BoxDecoration(
-                       color:Colors.white54,
-                       borderRadius:BorderRadius.circular(10),
-                     ),
-                     child:Text(
-                       'All',style:TextStyle(
-                       color:Colors.black,
-                     ),
-                     ),
-                   ),
-                   Container(
-                     height:25,
-                     width:85,
-                     decoration: BoxDecoration(
-                       color:Colors.white54,
-                       borderRadius:BorderRadius.circular(10),
-                     ),
-                     child:Text(
-                       'UnRead Chats',style:TextStyle(
-                       color:Colors.black,
-                     ),
-                     ),
-                   ),
-
-                    Container(
-                      height:40,
-                      width:100,
-                      decoration: BoxDecoration(
-                        color:Colors.white54,
-                        borderRadius:BorderRadius.circular(10),
-                      ),
-                      child:Text(
-                        'Favourites',style:TextStyle(
-                        color:Colors.black,
-                      ),
-                      ),
-                    ),
-                   Container(
-                     height:20,
-                     width:75,
-                     decoration: BoxDecoration(
-                       color:Colors.white54,
-                       borderRadius:BorderRadius.circular(10),
-                     ),
-                     child:Text(
-                       'Groups',style:TextStyle(
-                       color:Colors.black,
-                     ),
-                     ),
-                   ),
-                   Container(
-                     height:35,
-                     width:75,
-                     decoration: BoxDecoration(
-                       color:Colors.white54,
-                       borderRadius:BorderRadius.circular(10),
-                     ),
-                     child:Icon(Icons.add,color:Colors.black,)
-
-                   ),
-      ],
-                   ),
-               Divider(thickness:0.5,color:Colors.blueGrey,),
-                Card(
-                  color:Colors.white,
-                  child:ListTile
-                    (
-                    leading:CircleAvatar(
-                      radius:40,
-                      backgroundImage: AssetImage('assets/awesome.jpg'),
-                    ),
-                    title:Text(
-                      'Fatima',style:TextStyle(
-                      color:Colors.black,
-                      fontSize:20,
-                    ),
-                    ),
-                    subtitle: Text(
-                      'wht about today??',
-                      style:TextStyle(
-                        color:Colors.black,
-                        fontSize:10,
-                      ),
-                    ),
-                    trailing:Column(
-                      children:[
-                        Text(
-                          '6:03am',
-                        ),
-                        SizedBox(height:5),
-                        CircleAvatar(
-                        radius:20,
-                          backgroundColor: Colors.red,
-                          child:Text(
-                            '2',
+                //1st Row
+                SizedBox(height: 10,),
+              Row(
+                      children: [
+                     //   SizedBox(width:100),
+                       // SizedBox(height:120),
+                        Container(
+                          height:40,
+                          width:200,
+                          decoration:BoxDecoration(
+                            color: Colors.orange,
+                            borderRadius:BorderRadius.circular(10),
+                            border:Border.all(color:Colors.white,width:1,),
+                          ),
+                          child:Row(
+                           children:[
+                             SizedBox(width:2),
+                            Icon(Icons.search,color:Colors.white,),
+                             SizedBox(width:5),
+                             Text(
+                              'Search Favourite Food',style:TextStyle(
+                               color:Colors.white,
+                               fontSize:12,
+                             ),
+                             ),
+                           ],
                           ),
                         ),
+                        Spacer(),
+                        //SizedBox(width:120),
+                       Container(
+                           height: 40,
+                         width: 110,
+                         decoration: BoxDecoration(
+                           color: Colors.orange,
+                             borderRadius: BorderRadius.only(
+                               topLeft: Radius.circular(10),
+                               bottomLeft: Radius.circular(10)
+                             )
+                         ),
+                       ),
+                        Container(
+                          height: 40,
+                          width: 110,
+                          decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(10),
+                                  bottomRight: Radius.circular(10)
+                              ),
+                            border: Border.all()
+                          ),
+                        ),
+                        // Container(
+                        //   height:40,
+                        //   width:380,
+                        // decoration:BoxDecoration(
+                        //   color:Colors.orange,
+                        //   borderRadius:BorderRadius.circular(10),
+                        //   border:Border.all(width:1,color:Colors.white),
+                        //
+                        // ),
+                        //   child:Row(
+                        //     children:[
+                        //       SizedBox(width:20),
+                        //       Text(
+                        //        'Delivery',style:TextStyle(
+                        //         color:Colors.white,backgroundColor: Colors.deepOrange,
+                        //           fontSize:30,
+                        //       ),
+                        //       ),
+                        //     Icon(Icons.more_vert,size:10,color:Colors.white,),
+                        //     Text(
+                        //       'Dining',style:TextStyle(
+                        //       color:Colors.white,fontSize:30,
+                        //     ),
+                        //     ),
+                        //     ] ,
+                        //   ),
+                        // ),
                       ],
                     ),
-                  ),
-                ),
-                Card(
-                  color:Colors.white,
-                  child:ListTile
-                    (
-                    leading:CircleAvatar(
-                          radius:40,
-                          backgroundImage: AssetImage('assets/beutifull.jpg.jpg'),
-                    ),
-                    title:Text(
-                          'shazii',style:TextStyle(
-                          color:Colors.black,
-                          fontSize:20,
-                    ),
-                    ),
-                    subtitle: Text(
-                          'are u here?',
-                          style:TextStyle(
-                            color:Colors.black,
-                            fontSize:10,
-                          ),
-                    ),
-                    trailing:Column(
-                          children:[
-                            Text(
-                              '6:10am',
-                            ),
-                            SizedBox(height:5),
-                            CircleAvatar(
-                              radius:20,
-                              backgroundColor: Colors.red,
-                              child:Text(
-                                '5',
-                              ),
-                            ),
-                          ],
+              //2nd Row
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SizedBox(width:50),
+                  Text(
+                          'Top Deals',style:TextStyle(
+                          color:Colors.black,fontSize:30,
+                      fontWeight:FontWeight.bold,
+                        ),
+                        ),
+                ],
+              ),
+                //3rd Row
+                Container(
+                 height:350,
+                  width:800,
+                  decoration:BoxDecoration(
+                    borderRadius:BorderRadius.circular(20),
+                    image:DecorationImage(
+                      image:AssetImage('assets/burger3.jpg'),
+                        fit:BoxFit.cover,
                     ),
                   ),
                 ),
-                Card(
-                  color:Colors.white,
-                  child:ListTile
-                    (
-                    leading:CircleAvatar(
-                          radius:30,
-                          backgroundImage: AssetImage('assets/awesome.jpg'),
+                //4th row
+                Row(
+                  children:
+                  [
+                    SizedBox(height:100),
+                    SizedBox(width:50),
+                    Text(
+                      'Categories',style:TextStyle(
+                      color:Colors.black,
+                        fontSize:30,
+                      fontWeight:FontWeight.bold,
                     ),
-                    title:Text(
-                          'Fatima',style:TextStyle(
-                          color:Colors.black,
-                          fontSize:20,
+                    ),
+                    Spacer(),
+                    Text(
+                      'See All',style:TextStyle(
+                      color:Colors.red,
+                      fontSize:25,
                     ),
                     ),
-                    subtitle: Text(
-                          'do you have some plain today??',
-                          style:TextStyle(
-                            color:Colors.black,
-                            fontSize:10,
-                          ),
-                    ),
-                    trailing:Column(
-                          children:[
-                            Text(
-                              '8:30am',style:TextStyle(
-                        color:Colors.blueGrey,
-                    ),
-                            ),
-                            SizedBox(height:5),
-                            CircleAvatar(
-                              radius:20,
-                              backgroundColor: Colors.red,
-                              child:Text(
-                                '5',style:TextStyle(
-                                color:Colors.black,fontSize:10,
-                              ),
-                              ),
-                            ),
-                          ],
-                    ),
+                    SizedBox(width:20),
+                  ],
                   ),
+                   //5th row
+                Row(
+                       children:[
+                         SizedBox(height:100),
+                         SizedBox(width:60),
+                         CircleAvatar(
+                           radius:50,
+                           backgroundColor:Colors.orange,
+                           child:CircleAvatar(
+                             radius:40,
+                             backgroundImage: AssetImage('assets/burger.jpg'),
+                           ),
+                         ),
+                         SizedBox(width:20),
+                         CircleAvatar(
+                           radius:50,
+                           backgroundColor: Colors.orange,
+                           child:CircleAvatar(
+                             radius:40,
+                             backgroundImage: AssetImage('assets/realpizza.jpg'),
+                           ),
+                         ),
+                         SizedBox(width:20),
+                         CircleAvatar(
+                           radius:50,
+                           backgroundColor: Colors.orange,
+                           child:CircleAvatar(
+                             radius:40,
+                             backgroundImage: AssetImage('assets/fries.jpg'),
+                           ),
+                         ),
+                         SizedBox(width:20),
+                         CircleAvatar(
+                           radius:50,
+                           backgroundColor: Colors.orange,
+                           child:CircleAvatar(
+                             radius:40,
+                             backgroundImage: AssetImage('assets/hot dog.jpg'),
+                           ),
+                         ),
+                         SizedBox(width:20),
+                         CircleAvatar(
+                           radius:50,
+                           backgroundColor: Colors.orange,
+                           child:CircleAvatar(
+                             radius:40,
+                             backgroundImage: AssetImage('assets/tacco.jpg'),
+                           ),
+                         ),
+                         SizedBox(width:20),
+                         CircleAvatar(
+                           radius:50,
+                           backgroundColor:Colors.orange,
+                           child:CircleAvatar(
+                             radius:40,
+                             backgroundImage:AssetImage('assets/sandwitch.jpg'),
+                           ),
+                         ),
+                       ],
+                     ),
+
+                //6th row
+                Row(
+                  children:[
+                    SizedBox(height:100),
+                    SizedBox(width:60),
+                    Text(
+                      'Recommended Products',style:TextStyle(
+                      color:Colors.black,fontSize:30,
+                      fontWeight:FontWeight.bold,
+                    ),
+                    ),
+                    Spacer(),
+                    Text(
+                      'See All',style:TextStyle
+                      (
+                          color:Colors.red,
+                      fontSize:25,
+                    )
+                   ),
+                    SizedBox(width:20),
+                  ],
                 ),
-                Card(
-                  color:Colors.white,
-                  child:ListTile
-                    (
-                    leading:CircleAvatar(
-                          radius:30,
-                          backgroundImage: AssetImage('assets/awesome.jpg'),
-                    ),
-                    title:Text(
-                          'Fatima',style:TextStyle(
-                          color:Colors.black,
-                          fontSize:20,
-                    ),
-                    ),
-                    subtitle: Text(
-                          'do you have some plain today??',
-                          style:TextStyle(
-                            color:Colors.black,
-                            fontSize:10,
-                          ),
-                    ),
-                    trailing:Column(
-                          children:[
-                            Text(
-                              '8:30am',style:TextStyle(
-                        color:Colors.blueGrey,
-                    ),
-                            ),
-                            SizedBox(height:5),
-                            CircleAvatar(
-                              radius:20,
-                              backgroundColor: Colors.red,
-                              child:Text(
-                                '5',style:TextStyle(
-                                color:Colors.black,fontSize:10,
+                //7th row
+                    SingleChildScrollView(
+                      scrollDirection:Axis.horizontal,
+                    child:
+                    Row(
+                      mainAxisAlignment:MainAxisAlignment.start,
+                      children:[
+                        //column1
+                        Column
+                      (
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                      children:[
+                            Container(
+                              height:120,
+                              width:140,
+                              decoration:BoxDecoration(
+                                borderRadius:BorderRadius.circular(10),
+                                image:DecorationImage(
+                                  image:AssetImage('assets/burger king.jpg'),
+                                  fit:BoxFit.cover,
+                                ),
                               ),
+                            ),
+                            Container(
+                              height:80,
+                              width:140,
+                              color:Colors.white,
+                              child: Column(
+                                crossAxisAlignment:CrossAxisAlignment.start,
+                                children:[
+                                  Text(
+                                  'Burger king',style:TextStyle(
+                                    color:Colors.black,
+                                    fontSize:20,
+                                    fontWeight:FontWeight.bold,
+                                  ),
+                                  ),
+                                  Row(
+                                    children:[
+                                      Icon(Icons.attach_money,color:Colors.blueGrey,size:20),
+                                  Text(
+                                    '180.00',style:TextStyle(
+                                    color:Colors.blueGrey,
+                                    fontSize:15,
+                                  ),
+                                  ),
+                                      ],
+                                  ),
+                            ],
+                                  ),
+                              ),
+                              ],
+                    ),
+                            SizedBox(width:80),
+                            //2nd column
+                            Column(
+                              children:[
+                                      Container(
+                                        height:120,
+                                        width:140,
+                                        decoration:BoxDecoration(
+                                          borderRadius:BorderRadius.circular(10),
+                                          image:DecorationImage(
+                                            image:AssetImage('assets/familypizza.jpg'),
+                                            fit:BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        height:80,
+                                        width:140,
+                                        color:Colors.white,
+                                        child: Column(
+                                          crossAxisAlignment:CrossAxisAlignment.start,
+                                          children:[
+                                            Text(
+                                              'Family Pizza',style:TextStyle(
+                                              color:Colors.black,
+                                              fontSize:20,
+                                              fontWeight:FontWeight.bold,
+                                            ),
+                                            ),
+                                            Text(
+                                              '\$140.00',style:TextStyle(
+                                              color:Colors.blueGrey,
+                                              fontSize:15,
+                                            ),
+                                            ),
+                                            // Row(
+                                            //   children:[
+                                            //     Icon(Icons.attach_money,color:Colors.blueGrey,size:20),
+                                            //     Text(
+                                            //       '140.00',style:TextStyle(
+                                            //       color:Colors.blueGrey,
+                                            //       fontSize:15,
+                                            //     ),
+                                            //     ),
+                                            //   ],
+                                            // ),
+                                        ],
+                                      ),
+                                      ),
+                              ],
+                            ),
+                        SizedBox(width:80),
+                        Column(
+                          children:[
+                            Container(
+                              height:120,
+                              width:140,
+                              decoration:BoxDecoration(
+                                borderRadius:BorderRadius.circular(10),
+                                image:DecorationImage(
+                                  image:AssetImage('assets/deals.jpg'),
+                                  fit:BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                            Container(
+                              height:80,
+                              width:140,
+                              color:Colors.white,
+                              child: Column(
+                                crossAxisAlignment:CrossAxisAlignment.start,
+                                children:[
+                                  Text(
+                                    'Family deals',style:TextStyle(
+                                    color:Colors.black,
+                                    fontSize:20,
+                                    fontWeight:FontWeight.bold,
+                                  ),
+                                  ),
+                                  Row(
+                                    children:[
+                                      Icon(Icons.attach_money,color:Colors.blueGrey,size:20),
+                                      Text(
+                                        '340.00',style:TextStyle(
+                                        color:Colors.blueGrey,
+                                        fontSize:15,
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ],
-                    ),
-                  ),
-                ),
-                Card(
-                  color:Colors.white,
-                  child:ListTile
-                    (
-                    leading:CircleAvatar(
-                          radius:30,
-                          backgroundImage: AssetImage('assets/awesome.jpg'),
-                    ),
-                    title:Text(
-                          'Fatima',style:TextStyle(
-                          color:Colors.black,
-                          fontSize:20,
-                    ),
-                    ),
-                    subtitle: Text(
-                          'do you have some plain today??',
-                          style:TextStyle(
-                            color:Colors.black,
-                            fontSize:10,
-                          ),
-                    ),
-                    trailing:Column(
+                        ),
+                        SizedBox(width:80),
+                        Column(
                           children:[
-                            Text(
-                              '8:30am',style:TextStyle(
-                        color:Colors.blueGrey,
-                    ),
-                            ),
-                            SizedBox(height:5),
-                            CircleAvatar(
-                              radius:20,
-                              backgroundColor: Colors.red,
-                              child:Text(
-                                '5',style:TextStyle(
-                                color:Colors.black,fontSize:10,
+                            Container(
+                              height:120,
+                              width:140,
+                              decoration:BoxDecoration(
+                                borderRadius:BorderRadius.circular(10),
+                                image:DecorationImage(
+                                  image:AssetImage('assets/food.jpg'),
+                                  fit:BoxFit.cover,
+                                ),
                               ),
+                            ),
+                            Container(
+                              height:80,
+                              width:140,
+                              color:Colors.white,
+                              child: Column(
+                                crossAxisAlignment:CrossAxisAlignment.start,
+                                children:[
+                                  Text(
+                                    'Food details',style:TextStyle(
+                                    color:Colors.black,
+                                    fontSize:20,
+                                    fontWeight:FontWeight.bold,
+                                  ),
+                                  ),
+                                  Row(
+                                    children:[
+                                      Icon(Icons.attach_money,color:Colors.blueGrey,size:20),
+                                      Text(
+                                        '210.00',style:TextStyle(
+                                        color:Colors.blueGrey,
+                                        fontSize:15,
+                                      ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
                           ],
+                        ),
+
+          ],
+          ),
+                      //end of 7th row
+    ),
+                //8th row
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children:[
+                    Icon(Icons.home,color:Colors.red,size:30),
+                    Icon(Icons.circle_notifications,color:Colors.black,size:30),
+                    CircleAvatar(
+                      radius:30,
+                      backgroundColor: Colors.red,
+                      child:Icon(Icons.perm_contact_calendar_outlined,color:Colors.black,size:20),
                     ),
-                  ),
+                    Icon(Icons.add_reaction_outlined,color:Colors.black,size:30),
+                    Icon(Icons.person_sharp,color:Colors.black,size:30),
+                  ],
                 ),
               ],
-            ),
+    ),
+       ),
         ),
       ),
 
